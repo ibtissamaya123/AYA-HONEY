@@ -1,0 +1,2934 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="عسل الدغموس - متجر العسل والزيوت الطبيعية">
+
+<title>
+عسل الدغموس | متجر طبيعي
+</title>
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:
+    Tahoma,
+    Arial,
+    sans-serif;
+
+    background:#fff8e8;
+
+    color:#291808;
+
+    line-height:1.8;
+}
+
+button,
+input,
+textarea{
+    font:inherit;
+}
+
+button{
+    cursor:pointer;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+
+/* =========================
+   COLORS
+========================= */
+
+:root{
+
+    --gold:#d89a18;
+
+    --gold-light:#f7d46b;
+
+    --brown:#6a3d10;
+
+    --dark:#241609;
+
+    --cream:#fff8e8;
+
+    --white:#ffffff;
+
+    --green:#536b29;
+
+    --red:#9d2929;
+
+    --shadow:
+    0 12px 35px
+    rgba(60,35,5,.13);
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+
+    width:min(
+        1180px,
+        92%
+    );
+
+    margin:auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:
+    rgba(36,22,9,.98);
+
+    color:white;
+
+    box-shadow:
+    0 5px 25px
+    rgba(0,0,0,.2);
+}
+
+.nav{
+
+    min-height:78px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo{
+
+    font-size:27px;
+
+    font-weight:900;
+
+    color:
+    var(--gold-light);
+
+    white-space:nowrap;
+}
+
+.logo span{
+
+    display:block;
+
+    color:white;
+
+    text-align:center;
+
+    font-size:11px;
+
+    letter-spacing:2px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav ul{
+
+    list-style:none;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+}
+
+nav a{
+
+    color:white;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+nav a:hover{
+
+    color:
+    var(--gold-light);
+}
+
+
+/* =========================
+   CART BUTTON
+========================= */
+
+.cart-btn{
+
+    border:0;
+
+    border-radius:14px;
+
+    padding:
+    11px 17px;
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--gold),
+        var(--gold-light)
+    );
+
+    color:
+    var(--dark);
+
+    font-weight:900;
+
+    transition:.2s;
+}
+
+.cart-btn:hover{
+
+    transform:
+    translateY(-2px);
+
+    box-shadow:
+    0 7px 18px
+    rgba(0,0,0,.2);
+}
+
+#cartCount{
+
+    display:inline-grid;
+
+    place-items:center;
+
+    min-width:24px;
+
+    height:24px;
+
+    margin-right:5px;
+
+    border-radius:50%;
+
+    background:
+    var(--dark);
+
+    color:white;
+
+    font-size:12px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    padding:
+    90px 0;
+
+    background:
+
+    radial-gradient(
+        circle at 80% 20%,
+        #ffe59a,
+        transparent 30%
+    ),
+
+    linear-gradient(
+        135deg,
+        #fff8e8,
+        #f4d16b
+    );
+}
+
+.hero-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    1.1fr .9fr;
+
+    gap:55px;
+
+    align-items:center;
+}
+
+.badge{
+
+    display:inline-block;
+
+    padding:
+    7px 15px;
+
+    border-radius:50px;
+
+    background:white;
+
+    border:
+    1px solid #e7d09c;
+
+    color:
+    var(--brown);
+
+    font-weight:bold;
+}
+
+.hero h1{
+
+    font-size:
+    clamp(
+        43px,
+        6vw,
+        76px
+    );
+
+    line-height:1.1;
+
+    margin:
+    20px 0;
+}
+
+.hero h1 span{
+
+    color:#a55d08;
+}
+
+.hero p{
+
+    max-width:650px;
+
+    font-size:19px;
+
+    color:#604c32;
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-actions{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    margin-top:28px;
+}
+
+.primary{
+
+    border:0;
+
+    border-radius:14px;
+
+    padding:
+    12px 21px;
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--gold),
+        var(--gold-light)
+    );
+
+    color:
+    var(--dark);
+
+    font-weight:900;
+
+    transition:.2s;
+}
+
+.primary:hover{
+
+    transform:
+    translateY(-2px);
+}
+
+.secondary{
+
+    border:
+    1px solid #d9c394;
+
+    border-radius:14px;
+
+    padding:
+    12px 21px;
+
+    background:white;
+
+    color:
+    var(--brown);
+
+    font-weight:900;
+}
+
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero-art{
+
+    min-height:410px;
+
+    border-radius:35px;
+
+    display:grid;
+
+    place-items:center;
+
+    overflow:hidden;
+
+    background:
+
+    radial-gradient(
+        circle,
+        #ffd86d 0 18%,
+        #c57910 19% 38%,
+        #5a2f0c 39% 100%
+    );
+
+    box-shadow:
+    var(--shadow);
+}
+
+
+/* =========================
+   HONEY JAR
+========================= */
+
+.honey-jar{
+
+    width:230px;
+
+    height:290px;
+
+    border-radius:
+    30px 30px 48px 48px;
+
+    border:
+    9px solid #633107;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #8d4a06,
+        #f0aa21,
+        #8d4a06
+    );
+
+    box-shadow:
+    0 20px 45px
+    rgba(0,0,0,.28);
+
+    display:grid;
+
+    place-items:center;
+
+    text-align:center;
+
+    color:white;
+}
+
+.honey-label{
+
+    padding:
+    18px 15px;
+
+    border-radius:15px;
+
+    background:
+    rgba(255,255,255,.94);
+
+    color:
+    var(--brown);
+
+    font-weight:900;
+}
+
+.honey-label strong{
+
+    display:block;
+
+    font-size:24px;
+}
+
+.honey-label small{
+
+    font-size:12px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section{
+
+    padding:
+    75px 0;
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:40px;
+}
+
+.section-title h2{
+
+    font-size:40px;
+
+    color:
+    var(--brown);
+}
+
+.section-title p{
+
+    color:#756a5c;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:18px;
+}
+
+.feature{
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:white;
+
+    border:
+    1px solid #ecd9ae;
+
+    box-shadow:
+    var(--shadow);
+
+    text-align:center;
+}
+
+.feature-icon{
+
+    font-size:40px;
+
+    margin-bottom:8px;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:22px;
+}
+
+.card{
+
+    padding:20px;
+
+    border-radius:22px;
+
+    background:white;
+
+    border:
+    1px solid #ecd9ae;
+
+    box-shadow:
+    var(--shadow);
+
+    transition:.25s;
+}
+
+.card:hover{
+
+    transform:
+    translateY(-5px);
+}
+
+.product-image{
+
+    height:210px;
+
+    margin-bottom:18px;
+
+    border-radius:18px;
+
+    display:grid;
+
+    place-items:center;
+
+    background:
+    linear-gradient(
+        145deg,
+        #f9d66c,
+        #a85d0b
+    );
+}
+
+.product-bottle{
+
+    width:105px;
+
+    height:145px;
+
+    border-radius:
+    16px 16px 28px 28px;
+
+    border:
+    5px solid #633107;
+
+    background:
+    linear-gradient(
+        90deg,
+        #7b4108,
+        #f1ae26,
+        #8b4908
+    );
+
+    color:white;
+
+    display:grid;
+
+    place-items:center;
+
+    text-align:center;
+
+    font-weight:900;
+
+    box-shadow:
+    0 15px 30px
+    rgba(0,0,0,.25);
+}
+
+.card h3{
+
+    color:
+    var(--brown);
+
+    margin-bottom:5px;
+}
+
+.card p{
+
+    color:#756a5c;
+}
+
+.price{
+
+    font-size:24px;
+
+    font-weight:900;
+
+    color:
+    var(--brown);
+
+    margin:
+    12px 0;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:35px;
+
+    align-items:center;
+}
+
+.about-box{
+
+    padding:40px;
+
+    border-radius:25px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #2f1c0a,
+        #70400e
+    );
+
+    color:white;
+}
+
+.about-box h3{
+
+    color:
+    var(--gold-light);
+
+    font-size:28px;
+
+    margin-bottom:12px;
+}
+
+.about-list{
+
+    padding-right:22px;
+
+    margin-top:18px;
+}
+
+.about-list li{
+
+    margin:8px 0;
+}
+
+
+/* =========================
+   CART
+========================= */
+
+#cartItems{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:22px;
+
+    box-shadow:
+    var(--shadow);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:850px){
+
+    .hero-grid,
+    .about{
+
+        grid-template-columns:1fr;
+    }
+
+    .products-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .features{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    nav ul{
+
+        gap:10px;
+    }
+}
+
+@media(max-width:560px){
+
+    nav{
+
+        display:none;
+    }
+
+    .products-grid,
+    .features{
+
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+
+        padding:
+        55px 0;
+    }
+
+    .hero-art{
+
+        min-height:320px;
+    }
+
+    .section{
+
+        padding:
+        55px 0;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="container nav">
+
+<a
+class="logo"
+href="#home">
+
+🍯 عسل الدغموس
+
+<span>
+طبيعة في كل قطرة
+</span>
+
+</a>
+
+
+<nav>
+
+<ul>
+
+<li>
+<a href="#home">
+الرئيسية
+</a>
+</li>
+
+<li>
+<a href="#honey">
+العسل
+</a>
+</li>
+
+<li>
+<a href="#oils">
+الزيوت
+</a>
+</li>
+
+<li>
+<a href="#cart">
+السلة
+</a>
+</li>
+
+<li>
+<a href="#contact">
+الطلب
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+
+<button
+type="button"
+class="cart-btn"
+onclick="showCart()">
+
+🛒 السلة
+
+<span id="cartCount">
+0
+</span>
+
+</button>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<main id="home">
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+
+<div>
+
+<span class="badge">
+
+🍯 عسل الدغموس المغربي
+
+</span>
+
+
+<h1>
+
+عسل الدغموس
+
+<br>
+
+<span>
+مذاق أصيل من الطبيعة
+</span>
+
+</h1>
+
+
+<p>
+
+مرحبا بك في متجر
+<strong>عسل الدغموس</strong>،
+حيث تجد العسل والزيوت
+الطبيعية في مكان واحد.
+
+</p>
+
+
+<div class="hero-actions">
+
+<a
+class="primary"
+href="#honey">
+
+🍯 شاهد العسل
+
+</a>
+
+
+<a
+class="secondary"
+href="#oils">
+
+🌿 شاهد الزيوت
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-art">
+
+<div class="honey-jar">
+
+<div class="honey-label">
+
+🍯
+
+<strong>
+عسل الدغموس
+</strong>
+
+<small>
+منتج مغربي
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FEATURES
+========================= -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+لماذا عسل الدغموس؟
+</h2>
+
+<p>
+كل ما تحتاجه في متجر واحد
+</p>
+
+</div>
+
+
+<div class="features">
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🍯
+</div>
+
+<h3>
+عسل متنوع
+</h3>
+
+<p>
+اختيارات متنوعة من العسل.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🌿
+</div>
+
+<h3>
+زيوت طبيعية
+</h3>
+
+<p>
+مجموعة من الزيوت المختلفة.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🛒
+</div>
+
+<h3>
+سلة سهلة
+</h3>
+
+<p>
+أضف ما تريد واحسب المجموع.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🎡
+</div>
+
+<h3>
+عجلة التخفيض
+</h3>
+
+<p>
+جرب حظك للحصول على خصم.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section><!-- =========================
+     قسم العسل
+========================= -->
+<section class="section" id="honey">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>🍯 أنواع العسل</h2>
+      <p>اختار العسل اللي بغيتي وأضفو للسلة</p>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- 1 -->
+      <article class="product-card">
+        <div class="product-image">🍯</div>
+        <div class="product-info">
+          <span class="product-badge">الأكثر طلباً</span>
+          <h3>عسل السدر</h3>
+          <p>عسل طبيعي بنكهة مميزة.</p>
+          <div class="product-bottom">
+            <strong>120 DH</strong>
+            <button type="button"
+                    onclick="addToCart('عسل السدر',120)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="product-card">
+        <div class="product-image">🍯</div>
+        <div class="product-info">
+          <span class="product-badge">طبيعي</span>
+          <h3>عسل الزعتر</h3>
+          <p>عسل بطعم الزعتر المميز.</p>
+          <div class="product-bottom">
+            <strong>95 DH</strong>
+            <button type="button"
+                    onclick="addToCart('عسل الزعتر',95)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="product-card">
+        <div class="product-image">🍯</div>
+        <div class="product-info">
+          <span class="product-badge">مميز</span>
+          <h3>عسل الدغموس</h3>
+          <p>عسل الدغموس من متجرنا.</p>
+          <div class="product-bottom">
+            <strong>100 DH</strong>
+            <button type="button"
+                    onclick="addToCart('عسل الدغموس',100)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="product-card">
+        <div class="product-image">🍯</div>
+        <div class="product-info">
+          <span class="product-badge">طبيعي</span>
+          <h3>عسل الليمون</h3>
+          <p>نكهة خفيفة ومنعشة.</p>
+          <div class="product-bottom">
+            <strong>85 DH</strong>
+            <button type="button"
+                    onclick="addToCart('عسل الليمون',85)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="product-card">
+        <div class="product-image">🍯</div>
+        <div class="product-info">
+          <span class="product-badge">مميز</span>
+          <h3>عسل الكالبتوس</h3>
+          <p>عسل طبيعي بطعم مميز.</p>
+          <div class="product-bottom">
+            <strong>90 DH</strong>
+            <button type="button"
+                    onclick="addToCart('عسل الكالبتوس',90)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="product-card">
+        <div class="product-image">🍯</div>
+        <div class="product-info">
+          <span class="product-badge">طبيعي</span>
+          <h3>عسل البرتقال</h3>
+          <p>عسل بنكهة البرتقال.</p>
+          <div class="product-bottom">
+            <strong>85 DH</strong>
+            <button type="button"
+                    onclick="addToCart('عسل البرتقال',85)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="product-card">
+        <div class="product-image">🍯</div>
+        <div class="product-info">
+          <span class="product-badge">عرض</span>
+          <h3>عسل الربيع</h3>
+          <p>عسل طبيعي بطعم لطيف.</p>
+          <div class="product-bottom">
+            <strong>80 DH</strong>
+            <button type="button"
+                    onclick="addToCart('عسل الربيع',80)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="product-card">
+        <div class="product-image">🍯</div>
+        <div class="product-info">
+          <span class="product-badge">مميز</span>
+          <h3>عسل الخزامى</h3>
+          <p>نكهة عطرية مميزة.</p>
+          <div class="product-bottom">
+            <strong>110 DH</strong>
+            <button type="button"
+                    onclick="addToCart('عسل الخزامى',110)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="product-card">
+        <div class="product-image">🍯</div>
+        <div class="product-info">
+          <span class="product-badge">طبيعي</span>
+          <h3>عسل حبة البركة</h3>
+          <p>عسل بطابع مميز.</p>
+          <div class="product-bottom">
+            <strong>105 DH</strong>
+            <button type="button"
+                    onclick="addToCart('عسل حبة البركة',105)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="product-card">
+        <div class="product-image">🍯</div>
+        <div class="product-info">
+          <span class="product-badge">فاخر</span>
+          <h3>عسل الجبل</h3>
+          <p>عسل طبيعي مميز.</p>
+          <div class="product-bottom">
+            <strong>130 DH</strong>
+            <button type="button"
+                    onclick="addToCart('عسل الجبل',130)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section><!-- =========================
+     قسم الزيوت
+========================= -->
+<section class="section" id="oils">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>🫒 الزيوت الطبيعية</h2>
+      <p>اختار الزيت اللي بغيتي وأضفو للسلة</p>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- 11 -->
+      <article class="product-card">
+        <div class="product-image">🫒</div>
+        <div class="product-info">
+          <span class="product-badge">مميز</span>
+          <h3>زيت أركان</h3>
+          <p>زيت طبيعي بجودة مميزة.</p>
+          <div class="product-bottom">
+            <strong>140 DH</strong>
+            <button type="button"
+                    onclick="addToCart('زيت أركان',140)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="product-card">
+        <div class="product-image">🌿</div>
+        <div class="product-info">
+          <span class="product-badge">فاخر</span>
+          <h3>زيت العود</h3>
+          <p>زيت برائحة مميزة.</p>
+          <div class="product-bottom">
+            <strong>180 DH</strong>
+            <button type="button"
+                    onclick="addToCart('زيت العود',180)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 13 -->
+      <article class="product-card">
+        <div class="product-image">🫒</div>
+        <div class="product-info">
+          <span class="product-badge">طبيعي</span>
+          <h3>زيت الزيتون</h3>
+          <p>زيت زيتون طبيعي.</p>
+          <div class="product-bottom">
+            <strong>90 DH</strong>
+            <button type="button"
+                    onclick="addToCart('زيت الزيتون',90)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 14 -->
+      <article class="product-card">
+        <div class="product-image">🌰</div>
+        <div class="product-info">
+          <span class="product-badge">طبيعي</span>
+          <h3>زيت اللوز</h3>
+          <p>زيت اللوز الطبيعي.</p>
+          <div class="product-bottom">
+            <strong>75 DH</strong>
+            <button type="button"
+                    onclick="addToCart('زيت اللوز',75)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 15 -->
+      <article class="product-card">
+        <div class="product-image">🌿</div>
+        <div class="product-info">
+          <span class="product-badge">مميز</span>
+          <h3>زيت حبة البركة</h3>
+          <p>زيت طبيعي مميز.</p>
+          <div class="product-bottom">
+            <strong>80 DH</strong>
+            <button type="button"
+                    onclick="addToCart('زيت حبة البركة',80)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 16 -->
+      <article class="product-card">
+        <div class="product-image">🥥</div>
+        <div class="product-info">
+          <span class="product-badge">طبيعي</span>
+          <h3>زيت جوز الهند</h3>
+          <p>زيت جوز الهند الطبيعي.</p>
+          <div class="product-bottom">
+            <strong>85 DH</strong>
+            <button type="button"
+                    onclick="addToCart('زيت جوز الهند',85)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 17 -->
+      <article class="product-card">
+        <div class="product-image">🌿</div>
+        <div class="product-info">
+          <span class="product-badge">عرض</span>
+          <h3>زيت الخروع</h3>
+          <p>زيت طبيعي.</p>
+          <div class="product-bottom">
+            <strong>70 DH</strong>
+            <button type="button"
+                    onclick="addToCart('زيت الخروع',70)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 18 -->
+      <article class="product-card">
+        <div class="product-image">🌸</div>
+        <div class="product-info">
+          <span class="product-badge">مميز</span>
+          <h3>زيت اللافندر</h3>
+          <p>زيت برائحة اللافندر.</p>
+          <div class="product-bottom">
+            <strong>95 DH</strong>
+            <button type="button"
+                    onclick="addToCart('زيت اللافندر',95)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 19 -->
+      <article class="product-card">
+        <div class="product-image">🌱</div>
+        <div class="product-info">
+          <span class="product-badge">طبيعي</span>
+          <h3>زيت النعناع</h3>
+          <p>زيت طبيعي برائحة منعشة.</p>
+          <div class="product-bottom">
+            <strong>90 DH</strong>
+            <button type="button"
+                    onclick="addToCart('زيت النعناع',90)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 20 -->
+      <article class="product-card">
+        <div class="product-image">🌿</div>
+        <div class="product-info">
+          <span class="product-badge">مميز</span>
+          <h3>زيت إكليل الجبل</h3>
+          <p>زيت طبيعي بنكهة عطرية.</p>
+          <div class="product-bottom">
+            <strong>100 DH</strong>
+            <button type="button"
+                    onclick="addToCart('زيت إكليل الجبل',100)">
+              أضف للسلة 🛒
+            </button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section><!-- =========================
+     السلة
+========================= -->
+<section class="section cart-section" id="cart">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>🛒 سلة المشتريات</h2>
+      <p>راجع المنتجات ديالك قبل تأكيد الطلب</p>
+    </div>
+
+    <div class="cart-layout">
+
+      <!-- السلة -->
+      <div class="cart-box">
+
+        <div id="cartItems">
+          <div class="empty-cart">
+            🛒
+            <h3>السلة فارغة</h3>
+            <p>أضف شي منتج باش يبان هنا.</p>
+          </div>
+        </div>
+
+        <div class="cart-summary">
+
+          <div class="summary-row">
+            <span>المجموع:</span>
+            <strong id="subtotal">0 DH</strong>
+          </div>
+
+          <div class="summary-row discount-row">
+            <span>التخفيض:</span>
+            <strong id="discountAmount">0 DH</strong>
+          </div>
+
+          <div class="summary-row total-row">
+            <span>المجموع النهائي:</span>
+            <strong id="finalTotal">0 DH</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- عجلة التخفيض -->
+      <div class="wheel-box">
+
+        <div class="wheel-title">
+          <span>🎡</span>
+          <h3>عجلة التخفيض</h3>
+          <p>جرب حظك واحصل على تخفيض</p>
+        </div>
+
+        <div class="wheel-area">
+
+          <div class="wheel-pointer">
+            ▼
+          </div>
+
+          <div class="discount-wheel" id="discountWheel">
+
+            <div class="wheel-center">
+              🎁
+            </div>
+
+            <span class="wheel-text text-0">0%</span>
+            <span class="wheel-text text-5">5%</span>
+            <span class="wheel-text text-10">10%</span>
+            <span class="wheel-text text-50">50%</span>
+
+          </div>
+
+        </div>
+
+        <button
+          type="button"
+          class="spin-btn"
+          id="spinButton"
+          onclick="spinWheel()">
+          🎡 دور العجلة
+        </button>
+
+        <div id="discountResult" class="discount-result">
+          التخفيض ديالك: 0%
+        </div>
+
+        <p class="wheel-note">
+          كل دورة كتمنح تخفيضاً واحداً.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================
+     معلومات الطلب
+========================= -->
+<section class="section order-section" id="contact">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>📦 تأكيد الطلب</h2>
+      <p>دخل معلوماتك باش نوجدو الطلب</p>
+    </div>
+
+    <div class="order-box">
+
+      <form id="orderForm">
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label for="customerName">
+              👤 الاسم الكامل
+            </label>
+
+            <input
+              type="text"
+              id="customerName"
+              placeholder="دخل الاسم الكامل"
+              required>
+          </div>
+
+
+          <div class="form-group">
+            <label for="customerPhone">
+              📞 رقم الهاتف
+            </label>
+
+            <input
+              type="tel"
+              id="customerPhone"
+              placeholder="مثال: 06XXXXXXXX"
+              required>
+          </div>
+
+
+          <div class="form-group">
+            <label for="customerCity">
+              📍 المدينة
+            </label>
+
+            <input
+              type="text"
+              id="customerCity"
+              placeholder="مثال: الدار البيضاء"
+              required>
+          </div>
+
+
+          <div class="form-group">
+            <label for="customerAddress">
+              🏠 العنوان
+            </label>
+
+            <input
+              type="text"
+              id="customerAddress"
+              placeholder="الحي، الشارع..."
+              required>
+          </div>
+
+        </div>
+
+
+        <div class="seller-info">
+
+          <h3>📋 معلومات المتجر</h3>
+
+          <p>
+            👤 <strong>ابتسام عفراوي</strong>
+          </p>
+
+          <p>
+            📞 <strong>0622685943</strong>
+          </p>
+
+          <p>
+            🍯 <strong>عسل الدغموس</strong>
+          </p>
+
+        </div>
+
+
+        <button
+          type="submit"
+          class="confirm-order-btn">
+          ✅ تأكيد الطلب عبر WhatsApp
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================
+     تأكيد الطلب
+========================= -->
+<div
+  id="orderMessage"
+  class="order-message"
+  style="display:none;">
+
+  <div class="order-message-box">
+
+    <div class="success-icon">✅</div>
+
+    <h2>تم تجهيز الطلب!</h2>
+
+    <p>
+      غادي يتم فتح WhatsApp لإرسال تفاصيل الطلب.
+    </p>
+
+    <button
+      type="button"
+      onclick="closeOrderMessage()">
+      حسناً
+    </button>
+
+  </div>
+
+</div><script>
+/* =========================================
+   عربة التسوق
+========================================= */
+
+let cart = [];
+
+let currentDiscount = 0;
+let wheelUsed = false;
+
+
+/* إضافة منتج للسلة */
+function addToCart(name, price) {
+
+  const existingProduct = cart.find(
+    item => item.name === name
+  );
+
+  if (existingProduct) {
+    existingProduct.quantity++;
+  } else {
+
+    cart.push({
+      name: name,
+      price: price,
+      quantity: 1
+    });
+
+  }
+
+  updateCart();
+
+  /* انتقال للسلة */
+  document.getElementById("cart").scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
+
+/* تحديث السلة */
+function updateCart() {
+
+  const cartItems = document.getElementById("cartItems");
+  const cartCount = document.getElementById("cartCount");
+
+  let totalQuantity = 0;
+
+  cart.forEach(item => {
+    totalQuantity += item.quantity;
+  });
+
+  cartCount.textContent = totalQuantity;
+
+
+  /* السلة فارغة */
+  if (cart.length === 0) {
+
+    cartItems.innerHTML = `
+      <div class="empty-cart">
+
+        <div style="font-size:50px;">🛒</div>
+
+        <h3>السلة فارغة</h3>
+
+        <p>
+          أضف شي منتج باش يبان هنا.
+        </p>
+
+      </div>
+    `;
+
+    updateTotals();
+
+    return;
+  }
+
+
+  /* عرض المنتجات */
+  cartItems.innerHTML = cart.map((item, index) => {
+
+    const itemTotal =
+      item.price * item.quantity;
+
+    return `
+
+      <div class="cart-item">
+
+        <div class="cart-item-icon">
+          ${item.name.includes("زيت") ? "🫒" : "🍯"}
+        </div>
+
+
+        <div class="cart-item-info">
+
+          <h3>${item.name}</h3>
+
+          <p>
+            ${item.price} DH للوحدة
+          </p>
+
+        </div>
+
+
+        <div class="quantity-controls">
+
+          <button
+            type="button"
+            onclick="changeQuantity(${index}, 1)">
+            +
+          </button>
+
+          <span>
+            ${item.quantity}
+          </span>
+
+          <button
+            type="button"
+            onclick="changeQuantity(${index}, -1)">
+            −
+          </button>
+
+        </div>
+
+
+        <strong class="cart-item-total">
+          ${itemTotal} DH
+        </strong>
+
+
+        <button
+          type="button"
+          class="delete-btn"
+          onclick="removeFromCart(${index})">
+
+          🗑️
+
+        </button>
+
+      </div>
+
+    `;
+
+  }).join("");
+
+
+  updateTotals();
+}
+
+
+/* تغيير الكمية */
+function changeQuantity(index, amount) {
+
+  if (!cart[index]) return;
+
+  cart[index].quantity += amount;
+
+  if (cart[index].quantity <= 0) {
+    cart.splice(index, 1);
+  }
+
+  updateCart();
+}
+
+
+/* حذف المنتج */
+function removeFromCart(index) {
+
+  if (!cart[index]) return;
+
+  cart.splice(index, 1);
+
+  updateCart();
+}
+
+
+/* حساب المجموع */
+function getSubtotal() {
+
+  return cart.reduce(
+    (total, item) =>
+      total + (item.price * item.quantity),
+    0
+  );
+
+}
+
+
+/* تحديث الحسابات */
+function updateTotals() {
+
+  const subtotal = getSubtotal();
+
+  const discountAmount =
+    subtotal * currentDiscount / 100;
+
+  const finalTotal =
+    subtotal - discountAmount;
+
+
+  document.getElementById("subtotal").textContent =
+    subtotal.toFixed(2) + " DH";
+
+
+  document.getElementById("discountAmount").textContent =
+    discountAmount.toFixed(2) + " DH";
+
+
+  document.getElementById("finalTotal").textContent =
+    finalTotal.toFixed(2) + " DH";
+}
+
+
+/* فتح السلة */
+function showCart() {
+
+  document.getElementById("cart").scrollIntoView({
+    behavior: "smooth"
+  });
+
+}
+
+
+/* =========================================
+   عجلة التخفيض 🎡
+========================================= */
+
+function spinWheel() {
+
+  if (wheelUsed) {
+
+    document.getElementById("discountResult").textContent =
+      "⚠️ استعملتي العجلة من قبل.";
+
+    return;
+  }
+
+
+  if (cart.length === 0) {
+
+    document.getElementById("discountResult").textContent =
+      "🛒 أضف منتج للسلة أولاً.";
+
+    return;
+  }
+
+
+  const wheel =
+    document.getElementById("discountWheel");
+
+  const button =
+    document.getElementById("spinButton");
+
+
+  button.disabled = true;
+
+  button.textContent =
+    "🎡 كتدور...";
+
+
+  /*
+    النسب:
+
+    0%  = 65%
+    5%  = 25%
+    10% = 9%
+    50% = 1%
+  */
+
+  const random =
+    Math.random() * 100;
+
+  let discount;
+
+
+  if (random < 65) {
+
+    discount = 0;
+
+  } else if (random < 90) {
+
+    discount = 5;
+
+  } else if (random < 99) {
+
+    discount = 10;
+
+  } else {
+
+    discount = 50;
+
+  }
+
+
+  /*
+    دوران بصري للعجلة
+  */
+
+  const rotations =
+    5 + Math.floor(Math.random() * 3);
+
+  const randomAngle =
+    Math.floor(Math.random() * 360);
+
+  wheel.style.transform =
+    `rotate(${rotations * 360 + randomAngle}deg)`;
+
+
+  setTimeout(() => {
+
+    currentDiscount = discount;
+
+    wheelUsed = true;
+
+
+    document.getElementById(
+      "discountResult"
+    ).textContent =
+      `🎉 مبروك! حصلتي على تخفيض ${discount}%`;
+
+
+    button.textContent =
+      "✅ تم استعمال العجلة";
+
+
+    updateTotals();
+
+  }, 4000);
+
+}
+
+
+/* =========================================
+   إرسال الطلب عبر WhatsApp
+========================================= */
+
+document
+  .getElementById("orderForm")
+  .addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+
+    if (cart.length === 0) {
+
+      alert(
+        "🛒 السلة فارغة، أضف منتج أولاً."
+      );
+
+      return;
+    }
+
+
+    const name =
+      document.getElementById(
+        "customerName"
+      ).value.trim();
+
+
+    const phone =
+      document.getElementById(
+        "customerPhone"
+      ).value.trim();
+
+
+    const city =
+      document.getElementById(
+        "customerCity"
+      ).value.trim();
+
+
+    const address =
+      document.getElementById(
+        "customerAddress"
+      ).value.trim();
+
+
+    const subtotal =
+      getSubtotal();
+
+
+    const discountAmount =
+      subtotal * currentDiscount / 100;
+
+
+    const finalTotal =
+      subtotal - discountAmount;
+
+
+    let productsText = "";
+
+
+    cart.forEach(item => {
+
+      const total =
+        item.price * item.quantity;
+
+      productsText +=
+        `• ${item.name} × ${item.quantity} = ${total} DH\n`;
+
+    });
+
+
+    const message =
+
+`🍯 طلب جديد - عسل الدغموس
+
+👤 معلومات الزبون:
+الاسم: ${name}
+الهاتف: ${phone}
+المدينة: ${city}
+العنوان: ${address}
+
+🛒 المنتجات:
+${productsText}
+
+💰 المجموع قبل التخفيض:
+${subtotal.toFixed(2)} DH
+
+🎁 التخفيض:
+${currentDiscount}%
+
+💸 قيمة التخفيض:
+${discountAmount.toFixed(2)} DH
+
+💰 المجموع النهائي:
+${finalTotal.toFixed(2)} DH
+
+━━━━━━━━━━━━
+
+🍯 المتجر: عسل الدغموس
+👤 ابتسام عفراوي
+📞 0622685943`;
+
+
+    const whatsappNumber =
+      "212622685943";
+
+
+    const whatsappURL =
+      "https://wa.me/" +
+      whatsappNumber +
+      "?text=" +
+      encodeURIComponent(message);
+
+
+    document.getElementById(
+      "orderMessage"
+    ).style.display = "flex";
+
+
+    setTimeout(() => {
+
+      window.open(
+        whatsappURL,
+        "_blank"
+      );
+
+    }, 700);
+
+  });
+
+
+/* إغلاق رسالة الطلب */
+function closeOrderMessage() {
+
+  document.getElementById(
+    "orderMessage"
+  ).style.display = "none";
+
+}
+
+
+/* تشغيل السلة عند فتح الصفحة */
+updateCart();
+
+</script><script>
+/* =========================================
+   الجزء السادس — إنهاء الطلب وإعادة الضبط
+========================================= */
+
+function finishOrder() {
+
+  /* إذا السلة فارغة */
+  if (cart.length === 0) {
+    alert("🛒 السلة فارغة.");
+    return;
+  }
+
+  /* رسالة التأكيد */
+  const confirmOrder = confirm(
+    "✅ واش متأكد بغيتي تأكد الطلب؟"
+  );
+
+  if (!confirmOrder) {
+    return;
+  }
+
+  /* إفراغ السلة */
+  cart = [];
+
+  /* إعادة التخفيض للصفر */
+  currentDiscount = 0;
+
+  /* إعادة استعمال العجلة */
+  wheelUsed = false;
+
+  /* إعادة زر العجلة */
+  const spinButton =
+    document.getElementById("spinButton");
+
+  if (spinButton) {
+    spinButton.disabled = false;
+    spinButton.textContent = "🎡 دور العجلة";
+  }
+
+  /* إعادة نتيجة التخفيض */
+  const discountResult =
+    document.getElementById("discountResult");
+
+  if (discountResult) {
+    discountResult.textContent =
+      "🎡 دور العجلة للحصول على تخفيض!";
+  }
+
+  /* تحديث السلة والمجموع */
+  updateCart();
+
+  /* رسالة نجاح */
+  alert(
+    "🎉 تم تأكيد الطلب بنجاح!\nشكراً لك ❤️"
+  );
+
+  /* العودة إلى السلة */
+  const cartSection =
+    document.getElementById("cart");
+
+  if (cartSection) {
+    cartSection.scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+}
+
+
+/* =========================================
+   زر تفريغ السلة بالكامل
+========================================= */
+
+function clearCart() {
+
+  if (cart.length === 0) {
+    alert("🛒 السلة أصلاً فارغة.");
+    return;
+  }
+
+  const confirmClear = confirm(
+    "⚠️ واش متأكد بغيتي تحيد جميع المنتجات؟"
+  );
+
+  if (!confirmClear) {
+    return;
+  }
+
+  cart = [];
+
+  currentDiscount = 0;
+
+  wheelUsed = false;
+
+  updateCart();
+
+  /* إعادة زر العجلة */
+  const spinButton =
+    document.getElementById("spinButton");
+
+  if (spinButton) {
+    spinButton.disabled = false;
+    spinButton.textContent =
+      "🎡 دور العجلة";
+  }
+
+  /* إعادة رسالة التخفيض */
+  const discountResult =
+    document.getElementById("discountResult");
+
+  if (discountResult) {
+    discountResult.textContent =
+      "🎡 دور العجلة للحصول على تخفيض!";
+  }
+}
+
+
+/* =========================================
+   حماية من إدخال أرقام سالبة
+========================================= */
+
+function safePrice(price) {
+
+  price = Number(price);
+
+  if (isNaN(price) || price < 0) {
+    return 0;
+  }
+
+  return price;
+}
+
+
+/* =========================================
+   تحديث السلة عند تحميل الصفحة
+========================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  updateCart();
+
+});
+</script><!-- =========================================
+     الجزء السابع — أزرار السلة
+========================================= -->
+
+<div class="cart-actions">
+
+  <button
+    type="button"
+    onclick="showCart()">
+    🛒 عرض السلة
+  </button>
+
+  <button
+    type="button"
+    onclick="clearCart()">
+    🗑️ إفراغ السلة
+  </button>
+
+</div>
+
+
+<!-- ملخص الطلب -->
+
+<div class="cart-summary">
+
+  <div class="summary-row">
+    <span>🛒 عدد المنتجات:</span>
+    <strong id="cartCountSummary">0</strong>
+  </div>
+
+  <div class="summary-row">
+    <span>💰 المجموع:</span>
+    <strong id="summaryTotal">0.00 DH</strong>
+  </div>
+
+  <div class="summary-row discount-row">
+    <span>🎁 التخفيض:</span>
+    <strong id="summaryDiscount">0%</strong>
+  </div>
+
+  <div class="summary-final">
+
+    <span>💸 المجموع النهائي:</span>
+
+    <strong id="summaryFinal">
+      0.00 DH
+    </strong>
+
+  </div>
+
+</div>
+
+
+<style>
+
+.cart-actions {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.cart-actions button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 15px;
+  background: #f8f8f8;
+}
+
+.summary-row,
+.summary-final {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.summary-final {
+  margin-top: 10px;
+  padding-top: 15px;
+  border-top: 2px solid #ddd;
+  font-size: 20px;
+}
+
+.discount-row {
+  font-size: 15px;
+}
+
+</style>
+
+
+<script>
+
+/* =========================================
+   تحديث الملخص الجديد
+========================================= */
+
+function updateSummaryBox() {
+
+  const subtotal = getSubtotal();
+
+  const discountAmount =
+    subtotal * currentDiscount / 100;
+
+  const finalTotal =
+    subtotal - discountAmount;
+
+
+  /* عدد المنتجات */
+  let quantity = 0;
+
+  cart.forEach(function(item) {
+    quantity += item.quantity;
+  });
+
+
+  const countElement =
+    document.getElementById("cartCountSummary");
+
+  if (countElement) {
+    countElement.textContent = quantity;
+  }
+
+
+  /* المجموع */
+  const totalElement =
+    document.getElementById("summaryTotal");
+
+  if (totalElement) {
+    totalElement.textContent =
+      subtotal.toFixed(2) + " DH";
+  }
+
+
+  /* التخفيض */
+  const discountElement =
+    document.getElementById("summaryDiscount");
+
+  if (discountElement) {
+    discountElement.textContent =
+      currentDiscount + "%";
+  }
+
+
+  /* المجموع النهائي */
+  const finalElement =
+    document.getElementById("summaryFinal");
+
+  if (finalElement) {
+    finalElement.textContent =
+      finalTotal.toFixed(2) + " DH";
+  }
+
+}
+
+
+/* تحديث الملخص بعد كل تغيير */
+const oldUpdateCart = updateCart;
+
+updateCart = function() {
+
+  oldUpdateCart();
+
+  updateSummaryBox();
+
+};
+
+</script><!-- =========================================
+     الجزء الثامن — نافذة تأكيد الطلب
+========================================= -->
+
+<div id="confirmOrderBox" class="confirm-overlay">
+
+  <div class="confirm-card">
+
+    <div class="confirm-icon">🛒</div>
+
+    <h2>تأكيد الطلب</h2>
+
+    <p>راجع معلومات الطلب قبل التأكيد:</p>
+
+    <div class="confirm-total">
+      <span>💰 المجموع النهائي</span>
+      <strong id="confirmFinalTotal">0.00 DH</strong>
+    </div>
+
+    <div class="confirm-buttons">
+
+      <button
+        type="button"
+        onclick="closeConfirmOrder()">
+        ❌ إلغاء
+      </button>
+
+      <button
+        type="button"
+        onclick="confirmOrderNow()">
+        ✅ تأكيد الطلب
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<style>
+
+.confirm-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.confirm-card {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.confirm-icon {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.confirm-card h2 {
+  margin: 5px 0 10px;
+}
+
+.confirm-total {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 12px;
+  background: #f5f5f5;
+}
+
+.confirm-total span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.confirm-total strong {
+  font-size: 25px;
+}
+
+.confirm-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.confirm-buttons button {
+  flex: 1;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+</style>
+
+
+<script>
+
+/* =========================================
+   فتح نافذة التأكيد
+========================================= */
+
+function openConfirmOrder() {
+
+  if (cart.length === 0) {
+
+    alert("🛒 السلة فارغة.");
+
+    return;
+  }
+
+
+  const subtotal = getSubtotal();
+
+  const discountAmount =
+    subtotal * currentDiscount / 100;
+
+  const finalTotal =
+    subtotal - discountAmount;
+
+
+  document.getElementById(
+    "confirmFinalTotal"
+  ).textContent =
+    finalTotal.toFixed(2) + " DH";
+
+
+  document.getElementById(
+    "confirmOrderBox"
+  ).style.display = "flex";
+
+}
+
+
+/* =========================================
+   إغلاق النافذة
+========================================= */
+
+function closeConfirmOrder() {
+
+  document.getElementById(
+    "confirmOrderBox"
+  ).style.display = "none";
+
+}
+
+
+/* =========================================
+   تأكيد الطلب
+========================================= */
+
+function confirmOrderNow() {
+
+  closeConfirmOrder();
+
+  /*
+    هنا نفتح فورم الطلب
+    باش الزبون يدخل الاسم
+    والهاتف والمدينة والعنوان
+  */
+
+  const form =
+    document.getElementById("orderForm");
+
+  if (form) {
+
+    form.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+
+  }
+
+}
+
+</script><!-- =========================================
+     الجزء التاسع — رسالة نجاح الطلب
+========================================= -->
+
+<div id="successOrderBox" class="success-overlay">
+
+  <div class="success-card">
+
+    <div class="success-icon">🎉</div>
+
+    <h2>تم إرسال الطلب!</h2>
+
+    <p>
+      شكراً لك ❤️
+    </p>
+
+    <p>
+      رقم الطلب:
+      <strong id="orderNumber"></strong>
+    </p>
+
+    <button
+      type="button"
+      onclick="closeSuccessOrder()">
+      ✅ حسناً
+    </button>
+
+  </div>
+
+</div>
+
+
+<style>
+
+.success-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.success-card {
+  width: 100%;
+  max-width: 380px;
+  background: white;
+  border-radius: 22px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.success-icon {
+  font-size: 65px;
+  margin-bottom: 10px;
+}
+
+.success-card h2 {
+  margin-bottom: 10px;
+}
+
+.success-card button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+</style>
+
+
+<script>
+
+/* =========================================
+   إنشاء رقم الطلب
+========================================= */
+
+function generateOrderNumber() {
+
+  const now = new Date();
+
+  const year =
+    now.getFullYear();
+
+  const month =
+    String(now.getMonth() + 1)
+      .padStart(2, "0");
+
+  const day =
+    String(now.getDate())
+      .padStart(2, "0");
+
+  const random =
+    Math.floor(1000 + Math.random() * 9000);
+
+  return `DG-${year}${month}${day}-${random}`;
+
+}
+
+
+/* =========================================
+   إظهار رسالة النجاح
+========================================= */
+
+function showSuccessOrder() {
+
+  const number =
+    generateOrderNumber();
+
+  document.getElementById(
+    "orderNumber"
+  ).textContent = number;
+
+
+  document.getElementById(
+    "successOrderBox"
+  ).style.display = "flex";
+
+}
+
+
+/* =========================================
+   إغلاق رسالة النجاح
+========================================= */
+
+function closeSuccessOrder() {
+
+  document.getElementById(
+    "successOrderBox"
+  ).style.display = "none";
+
+}
+
+</script><!-- =========================================
+     الجزء العاشر — حفظ السلة تلقائياً
+========================================= -->
+
+<script>
+
+/* =========================================
+   حفظ السلة
+========================================= */
+
+function saveCart() {
+
+  localStorage.setItem(
+    "daghmousCart",
+    JSON.stringify(cart)
+  );
+
+  localStorage.setItem(
+    "daghmousDiscount",
+    currentDiscount
+  );
+
+}
+
+
+/* =========================================
+   تحميل السلة
+========================================= */
+
+function loadCart() {
+
+  const savedCart =
+    localStorage.getItem("daghmousCart");
+
+  const savedDiscount =
+    localStorage.getItem("daghmousDiscount");
+
+
+  if (savedCart) {
+
+    try {
+
+      cart = JSON.parse(savedCart);
+
+    } catch (error) {
+
+      cart = [];
+
+    }
+
+  }
+
+
+  if (savedDiscount !== null) {
+
+    currentDiscount =
+      Number(savedDiscount);
+
+  }
+
+
+  updateCart();
+
+}
+
+
+/* =========================================
+   تعديل updateCart للحفظ
+========================================= */
+
+const originalUpdateCart =
+  updateCart;
+
+updateCart = function() {
+
+  originalUpdateCart();
+
+  saveCart();
+
+};
+
+
+/* =========================================
+   تشغيل عند فتح الصفحة
+========================================= */
+
+document.addEventListener(
+  "DOMContentLoaded",
+  function() {
+
+    loadCart();
+
+  }
+);
+
+
+/* =========================================
+   حماية إضافية قبل إغلاق الصفحة
+========================================= */
+
+window.addEventListener(
+  "beforeunload",
+  function() {
+
+    saveCart();
+
+  }
+);
+
+</script>
